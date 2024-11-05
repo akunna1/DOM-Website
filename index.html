@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Mobile responsiveness 1: Sets the width of the viewport to the device's width and scales the content accordingly-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Understanding the DOM & Virtual DOM</title>
+    <link rel="icon" href="pink.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Understanding the DOM & Virtual DOM</h1>
+    </header>
+    <section class="content">
+        <!-- Mobile responsiveness 2: The page uses a single-column layout, which inherently adapts well to different screen widths-->
+        <div id="dom-explanation">
+            <h2>What is the DOM?</h2>
+            <p>The DOM (Document Object Model) is like a tree of all the elements on your webpage. It helps developers easily change things on the page, making websites interactive and fun!</p>
+            <button class="reveal-btn" onclick="showFunFact('dom-fact')">Learn More</button>
+            <p id="dom-fact" class="hidden">The DOM lets you change a website's content without reloading the page. Cool, right?</p>
+        </div>
+
+        <div id="virtual-dom-explanation">
+            <h2>What is the Virtual DOM?</h2>
+            <p>The Virtual DOM is a smarter way of updating the real DOM. It helps frameworks like React and Vue make changes quickly so websites are faster.</p>
+            <button class="reveal-btn" onclick="showFunFact('virtual-dom-fact')">Learn More</button>
+            <p id="virtual-dom-fact" class="hidden">The Virtual DOM is like a draft version of your webpage where changes are tested before going live!</p>
+        </div>
+
+        <div class="framework-info" id="react-info">
+            <h2>React.js</h2>
+            <p>React uses the Virtual DOM to update only the parts of the page that change. This makes it super fast!</p>
+        </div>
+
+        <div class="framework-info" id="vue-info">
+            <h2>Vue.js</h2>
+            <p>Vue also uses the Virtual DOM to make smart changes, so your website feels smooth and quick.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Akunna Onyekachi. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
